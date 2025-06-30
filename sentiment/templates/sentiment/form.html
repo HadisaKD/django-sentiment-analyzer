@@ -1,3 +1,6 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'sentiment/style.css' %}">
+
 <h2>تحلیل احساس پیام</h2>
 <form method="post">
     {% csrf_token %}
