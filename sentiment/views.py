@@ -22,3 +22,7 @@ def analyze_sentiment(request):
 def show_result(request, pk):
     msg = Message.objects.get(pk=pk)
     return render(request, 'sentiment/result.html', {'message': msg})
+
+def message_list(request):
+    messages = Message.objects.all().order_by('id')
+    return render(request, 'sentiment/message_list.html', {'messages': messages})

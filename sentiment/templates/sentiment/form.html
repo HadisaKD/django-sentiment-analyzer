@@ -3,4 +3,6 @@
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">تحلیل کن</button>
+    <br>
+    <a href="{% url 'message_list' %}">مشاهده همه پیام‌ها</a>
 </form>

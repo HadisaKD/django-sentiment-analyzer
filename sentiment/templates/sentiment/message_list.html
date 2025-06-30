@@ -1,0 +1,22 @@
+<h1>Sentiment Messages</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Text</th>
+            <th>Sentiment</th>
+            <th>Created</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for msg in messages %}
+        <tr>
+            <td>{{ msg.id }}</td>
+            <td>{{ msg.text }}</td>
+            <td>{{ msg.sentiment }}</td>
+            <td>{{ msg.created_at }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="{% url 'sentiment_form' %}">بازگشت</a>
