@@ -1,6 +1,3 @@
-from pathlib import Path
-
-readme_content = """
 # 🧠 Sentiment Analysis Web App
 
 A simple web application built with Django that uses a machine learning model to analyze the **sentiment** of user-submitted text messages (positive or negative).
@@ -70,13 +67,3 @@ A simple web application built with Django that uses a machine learning model to
 
 ## Author
 **Made with ❤️ by HadisaKD**
-
-"""
-
-readme_path = Path("/mnt/data/README.md")
-readme_path.write_text(readme_content.strip())
-readme_path.name
-
-
-Result
-'README.md'
